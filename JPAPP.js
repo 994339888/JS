@@ -6,7 +6,7 @@
 𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹
 
 [rewrite_local] 
-^https?:\/\/api\.mercari\.jp\/services\/home\/v2\/homefeed-contents url script-response-body https://raw.githubusercontent.com/994339888/JS/42792f5b8f7bdf0fc2742a4de4216cad5c0b5f05/JPAPP.
+^https?:\/\/api\.mercari\.jp\/services\/home\/v2\/homefeed-contents url script-response-body https://raw.githubusercontent.com/994339888/JS/42792f5b8f7bdf0fc2742a4de4216cad5c0b5f05/JPAPP.js
 
 [MITM]
 hostname = api.mercari.jp
