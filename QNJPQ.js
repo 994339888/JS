@@ -7,7 +7,7 @@
 𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹𒊹
 
 [rewrite_local] 
-^https?:\/\/yxszkj\.xyz:8443\/user\/authToken url script-response-body https://raw.githubusercontent.com/Rnik666/YJTJS/main/QNJPQ.js
+^https?:\/\/yxszkj\.xyz:8443\/user\/authToken url script-response-body https://raw.githubusercontent.com/994339888/JS/42792f5b8f7bdf0fc2742a4de4216cad5c0b5f05/QNJPQ.js
 
 [MITM]
 hostname = yxszkj.xyz
