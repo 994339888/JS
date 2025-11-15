@@ -26,7 +26,7 @@ HOST,order.mercari.com,mercari
 # 从抓包中得到的Mercari相关的域名
 HOST,api.mercari.jp,mercari
 HOST,static.mercdn.net,mercari
-HOST,static.mercdn.net/item,mercari
+# HOST,static.mercdn.net/item,mercari # 删除路径部分
 HOST,static.mercdn.net/thumb,mercari
 HOST,static.mercdn.net/images,mercari
 
