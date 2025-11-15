@@ -890,24 +890,24 @@ function getnode_emoji(item,ind){
   }
 }
 
+
 // 操作订阅的 tag
 function tag_handle(item) {
-  // 强制将所有节点的标签设置为统一标签
-  item = item.replace(/tag=[^\&]+/, 'tag=统一标签');
-  return item;
+  if(item.indexOf("node_tag_prefix")!=-1) {
+    //item = item.replace(/node_tag_prefix/g,subtag)
+    //console.log(item.split("node_tag_prefix")[1][1])
+    ptnn = /\d/.test(item.split("node_tag_prefix")[1][0])? item.split("node_tag_prefix")[1][0]:""
+    nptnn = /\d/.test(item.split("node_tag_prefix")[1][1])? item.split("node_tag_prefix")[1][1]:""
+    //console.log(ptnn)
+    item = item.replace(/node_tag_prefix\d{0,2}/g,PatternN(subtag,ptnn,nptnn))
+  }
+  return item
 }
 
 // 用于单条 URI 的 tag 参数, 直接指定节点名
-//function URI_TAG(cnt0,tag0) {
-  //cnt0 = cnt0.split("tag=")[0] + "tag=" + tag0
-  //return cnt0
-//}
-// 用于单条 URI 的 tag 参数, 直接指定节点名
-function URI_TAG(cnt0, tag0) {
-  // 统一使用"统一标签"作为标签
-  cnt0 = cnt0.split("tag=")[0] + "tag=统一标签";
-  return cnt0;
-}
+function URI_TAG(cnt0,tag0) {
+  cnt0 = cnt0.split("tag=")[0] + "tag=" + tag0
+  return cnt0，
 
 // 方便代理链的实现
 function ServerRelay(src,dst) {
