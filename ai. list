@@ -1,0 +1,71 @@
+
+
+# OpenAI相关域名（如ChatGPT等服务）
+HOST,openai.com
+HOST,api.openai.com
+HOST,chat.openai.com
+HOST,platform.openai.com
+HOST,openai.azure.com
+
+# Google AI相关域名（如Google Cloud AI、TensorFlow等）
+HOST,ai.google
+HOST,cloud.google.com
+HOST,developers.google.com
+HOST,ai-platform.googleapis.com
+HOST,tensorflow.org
+HOST,tfhub.dev
+
+# Microsoft AI相关域名（如Azure AI、Cognitive Services等）
+HOST,azure.microsoft.com
+HOST,cognitive.microsoft.com
+HOST,api.cognitive.microsoft.com
+HOST,microsoft.com
+HOST,msftazureai.com
+
+# IBM Watson相关域名
+HOST,watson.ibm.com
+HOST,api.us-south.watson.cloud.ibm.com
+
+# Amazon Web Services (AWS) AI相关域名
+HOST,aws.amazon.com
+HOST,aws.amazon.com/ai
+HOST,sagemaker.us-west-2.amazonaws.com
+HOST,comprehend.us-west-2.amazonaws.com
+
+# NVIDIA AI相关域名（如NVIDIA Deep Learning等）
+HOST,developer.nvidia.com
+HOST,nvidia.com
+
+# Hugging Face AI相关域名（如Transformers模型库等）
+HOST,huggingface.co
+HOST,api-inference.huggingface.co
+
+# DeepMind AI相关域名（如DeepMind研究平台等）
+HOST,deepmind.com
+
+# AI服务平台（如AI学习平台、语音识别等）
+HOST,openai.org
+
+# AI研究与论文（如arXiv、Papers with Code等）
+HOST,arxiv.org
+HOST,paperswithcode.com
+HOST,ai.nytimes.com
+HOST,ai.googleblog.com
+
+# AI领域的一些研究机构和公司
+HOST,stanford.edu
+HOST,mit.edu
+HOST,ox.ac.uk
+HOST,cambridge.org
+HOST,berkeley.edu
+
+# IP段（针对特定AI公司或服务的IP段，可以根据需要增加）
+IP-CIDR,104.18.0.0/16
+IP-CIDR,34.80.0.0/13
+IP-CIDR,35.184.0.0/14
+IP-CIDR,52.10.0.0/15
+IP-CIDR,54.240.0.0/14
+IP-CIDR,185.3.95.0/24
+IP-CIDR,52.60.0.0/15
+IP-CIDR,40.127.0.0/16
+IP-CIDR,35.191.0.0/16
