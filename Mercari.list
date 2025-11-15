@@ -1,0 +1,56 @@
+# NAME: Mercari
+# AUTHOR: YourName
+# REPO: https://github.com/your-repo/ios_rule_script
+# UPDATED: 2025-11-16
+# HOST: 14
+# HOST-KEYWORD: 2
+# HOST-SUFFIX: 8
+# IP-ASN: 2
+# IP-CIDR: 4
+# TOTAL: 22
+
+# Mercari相关的主域名和子域名
+HOST,mercari.com,mercari
+HOST,static.mercari.com,mercari
+HOST,m.mercari.com,mercari
+HOST,api.mercari.com,mercari
+HOST,cdn.mercari.com,mercari
+HOST,auction.mercari.com,mercari
+HOST,secure.mercari.com,mercari
+HOST,account.mercari.com,mercari
+HOST,review.mercari.com,mercari
+HOST,search.mercari.com,mercari
+HOST,inventory.mercari.com,mercari
+HOST,order.mercari.com,mercari
+
+# 从抓包中得到的Mercari相关的域名
+HOST,api.mercari.jp,mercari
+HOST,static.mercdn.net,mercari
+
+HOST,static.mercdn.net/thumb,mercari
+HOST,static.mercdn.net/images,mercari
+
+# Mercari相关的后缀域名
+HOST-SUFFIX,mercari.com,mercari
+HOST-SUFFIX,mercariapi.com,mercari
+HOST-SUFFIX,mercariimg.com,mercari
+HOST-SUFFIX,mercariassets.com,mercari
+HOST-SUFFIX,mercaristatic.com,mercari
+HOST-SUFFIX,mercariapp.com,mercari
+HOST-SUFFIX,mercariuser.com,mercari
+HOST-SUFFIX,mercariimage.com,mercari
+
+# Mercari相关的关键字
+HOST-KEYWORD,mercari,mercari
+HOST-KEYWORD,mercariapi,mercari
+HOST-KEYWORD,mercariapp,mercari
+
+# Mercari相关的IP段
+IP-CIDR,203.144.191.0/24,mercari
+IP-CIDR,110.93.198.0/24,mercari
+IP-CIDR,103.21.190.0/24,mercari
+IP-CIDR,185.59.222.0/24,mercari
+
+# Mercari相关的ASN
+IP-ASN,13986,mercari
+IP-ASN,13335,mercari
