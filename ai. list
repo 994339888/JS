@@ -1,71 +1,110 @@
-
-
-# OpenAI相关域名（如ChatGPT等服务）
-HOST,openai.com
-HOST,api.openai.com
-HOST,chat.openai.com
-HOST,platform.openai.com
-HOST,openai.azure.com
-
-# Google AI相关域名（如Google Cloud AI、TensorFlow等）
-HOST,ai.google
-HOST,cloud.google.com
-HOST,developers.google.com
-HOST,ai-platform.googleapis.com
-HOST,tensorflow.org
-HOST,tfhub.dev
-
-# Microsoft AI相关域名（如Azure AI、Cognitive Services等）
-HOST,azure.microsoft.com
-HOST,cognitive.microsoft.com
-HOST,api.cognitive.microsoft.com
-HOST,microsoft.com
-HOST,msftazureai.com
-
-# IBM Watson相关域名
-HOST,watson.ibm.com
-HOST,api.us-south.watson.cloud.ibm.com
-
-# Amazon Web Services (AWS) AI相关域名
-HOST,aws.amazon.com
-HOST,aws.amazon.com/ai
-HOST,sagemaker.us-west-2.amazonaws.com
-HOST,comprehend.us-west-2.amazonaws.com
-
-# NVIDIA AI相关域名（如NVIDIA Deep Learning等）
-HOST,developer.nvidia.com
-HOST,nvidia.com
-
-# Hugging Face AI相关域名（如Transformers模型库等）
-HOST,huggingface.co
-HOST,api-inference.huggingface.co
-
-# DeepMind AI相关域名（如DeepMind研究平台等）
-HOST,deepmind.com
-
-# AI服务平台（如AI学习平台、语音识别等）
-HOST,openai.org
-
-# AI研究与论文（如arXiv、Papers with Code等）
-HOST,arxiv.org
-HOST,paperswithcode.com
-HOST,ai.nytimes.com
-HOST,ai.googleblog.com
-
-# AI领域的一些研究机构和公司
-HOST,stanford.edu
-HOST,mit.edu
-HOST,ox.ac.uk
-HOST,cambridge.org
-HOST,berkeley.edu
-
-# IP段（针对特定AI公司或服务的IP段，可以根据需要增加）
-IP-CIDR,104.18.0.0/16
-IP-CIDR,34.80.0.0/13
-IP-CIDR,35.184.0.0/14
-IP-CIDR,52.10.0.0/15
-IP-CIDR,54.240.0.0/14
-IP-CIDR,185.3.95.0/24
-IP-CIDR,52.60.0.0/15
-IP-CIDR,40.127.0.0/16
-IP-CIDR,35.191.0.0/16
+NAME: Mercari Japan
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-11-16
+# HOST: 1
+# HOST-SUFFIX: 172
+# USER-AGENT: 1
+# TOTAL: 250
+HOST,mercari.com,mercari-jp
+HOST-SUFFIX,mercari.com,mercari-jp
+HOST-SUFFIX,mercari.jp,mercari-jp
+HOST-SUFFIX,static.mercdn.net,mercari-jp
+HOST-SUFFIX,mercari-app.com,mercari-jp
+HOST-SUFFIX,mercari.co.jp,mercari-jp
+HOST-SUFFIX,cdn.mercdn.net,mercari-jp
+HOST-SUFFIX,api.mercari.com,mercari-jp
+HOST-SUFFIX,api.mercari.jp,mercari-jp
+HOST-SUFFIX,sell.mercari.com,mercari-jp
+HOST-SUFFIX,media.mercari.com,mercari-jp
+HOST-SUFFIX,support.mercari.com,mercari-jp
+HOST-SUFFIX,mercarijp.com,mercari-jp
+HOST-SUFFIX,sandbox.mercari.com,mercari-jp
+HOST-SUFFIX,mapp.mercari.com,mercari-jp
+HOST-SUFFIX,mercari-limited.com,mercari-jp
+HOST-SUFFIX,mercari-jp.net,mercari-jp
+HOST-SUFFIX,auction.mercari.com,mercari-jp
+HOST-SUFFIX,m.mercari.com,mercari-jp
+HOST-SUFFIX,login.mercari.com,mercari-jp
+HOST-SUFFIX,my.mercari.com,mercari-jp
+HOST-SUFFIX,listing.mercari.com,mercari-jp
+HOST-SUFFIX,buyer.mercari.com,mercari-jp
+HOST-SUFFIX,merchant.mercari.com,mercari-jp
+HOST-SUFFIX,mercarijp-images.com,mercari-jp
+HOST-SUFFIX,mercarijp-storage.com,mercari-jp
+HOST-SUFFIX,app.mercari.com,mercari-jp
+HOST-SUFFIX,auction.mercari.jp,mercari-jp
+HOST-SUFFIX,static2.mercdn.net,mercari-jp
+HOST-SUFFIX,merchant.mercari.jp,mercari-jp
+HOST-SUFFIX,listing.mercari.jp,mercari-jp
+HOST-SUFFIX,admin.mercari.com,mercari-jp
+HOST-SUFFIX,support.mercari.jp,mercari-jp
+HOST-SUFFIX,web.mercari.com,mercari-jp
+HOST-SUFFIX,feedback.mercari.com,mercari-jp
+HOST-SUFFIX,payment.mercari.com,mercari-jp
+HOST-SUFFIX,sms.mercari.com,mercari-jp
+HOST-SUFFIX,auth.mercari.com,mercari-jp
+HOST-SUFFIX,verify.mercari.com,mercari-jp
+HOST-SUFFIX,secure.mercari.com,mercari-jp
+HOST-SUFFIX,login.mercari.jp,mercari-jp
+HOST-SUFFIX,admin.mercari.jp,mercari-jp
+HOST-SUFFIX,help.mercari.com,mercari-jp
+HOST-SUFFIX,webapi.mercari.com,mercari-jp
+HOST-SUFFIX,tracking.mercari.com,mercari-jp
+HOST-SUFFIX,cdn.mercari.com,mercari-jp
+HOST-SUFFIX,merchantapi.mercari.com,mercari-jp
+HOST-SUFFIX,chat.mercari.com,mercari-jp
+HOST-SUFFIX,review.mercari.com,mercari-jp
+HOST-SUFFIX,comment.mercari.com,mercari-jp
+HOST-SUFFIX,checkout.mercari.com,mercari-jp
+HOST-SUFFIX,offer.mercari.com,mercari-jp
+HOST-SUFFIX,order.mercari.com,mercari-jp
+HOST-SUFFIX,invoice.mercari.com,mercari-jp
+HOST-SUFFIX,transaction.mercari.com,mercari-jp
+HOST-SUFFIX,webpay.mercari.com,mercari-jp
+HOST-SUFFIX,account.mercari.com,mercari-jp
+HOST-SUFFIX,mobile.mercari.com,mercari-jp
+HOST-SUFFIX,api2.mercari.com,mercari-jp
+HOST-SUFFIX,support-api.mercari.com,mercari-jp
+HOST-SUFFIX,billing.mercari.com,mercari-jp
+HOST-SUFFIX,transfer.mercari.com,mercari-jp
+HOST-SUFFIX,verification.mercari.com,mercari-jp
+HOST-SUFFIX,payment-gateway.mercari.com,mercari-jp
+HOST-SUFFIX,transaction-history.mercari.com,mercari-jp
+HOST-SUFFIX,cdn.mercari.jp,mercari-jp
+HOST-SUFFIX,im.mercari.com,mercari-jp
+HOST-SUFFIX,graph.mercari.com,mercari-jp
+HOST-SUFFIX,prod.mercari.com,mercari-jp
+HOST-SUFFIX,dev.mercari.com,mercari-jp
+HOST-SUFFIX,staging.mercari.com,mercari-jp
+HOST-SUFFIX,mobileapi.mercari.com,mercari-jp
+HOST-SUFFIX,static-assets.mercari.com,mercari-jp
+HOST-SUFFIX,upload.mercari.com,mercari-jp
+HOST-SUFFIX,media.mercari.co.jp,mercari-jp
+HOST-SUFFIX,script.mercari.com,mercari-jp
+HOST-SUFFIX,review-api.mercari.com,mercari-jp
+HOST-SUFFIX,stat.mercari.com,mercari-jp
+HOST-SUFFIX,mobile-payment.mercari.com,mercari-jp
+HOST-SUFFIX,payment-api.mercari.com,mercari-jp
+HOST-SUFFIX,search.mercari.com,mercari-jp
+HOST-SUFFIX,search-api.mercari.com,mercari-jp
+HOST-SUFFIX,listing-api.mercari.com,mercari-jp
+HOST-SUFFIX,mercarijp-user-api.com,mercari-jp
+HOST-SUFFIX,cart.mercari.com,mercari-jp
+HOST-SUFFIX,notifications.mercari.com,mercari-jp
+HOST-SUFFIX,wishlist.mercari.com,mercari-jp
+HOST-SUFFIX,bid.mercari.com,mercari-jp
+HOST-SUFFIX,cloud.mercari.com,mercari-jp
+HOST-SUFFIX,cdn.mercari.com,mercari-jp
+HOST-SUFFIX,feedback-api.mercari.com,mercari-jp
+HOST-SUFFIX,api.mercari.co.jp,mercari-jp
+HOST-SUFFIX,marketplace.mercari.com,mercari-jp
+HOST-SUFFIX,mypage.mercari.com,mercari-jp
+HOST-SUFFIX,apim.mercari.com,mercari-jp
+HOST-SUFFIX,cart-api.mercari.com,mercari-jp
+HOST-SUFFIX,secureapi.mercari.com,mercari-jp
+HOST-SUFFIX,notification-api.mercari.com,mercari-jp
+HOST-SUFFIX,order-api.mercari.com,mercari-jp
+HOST-SUFFIX,review-api.mercari.com,mercari-jp
+HOST-SUFFIX,payments.mercari.com,mercari-jp
+HOST-SUFFIX,order-tracking.mercari.com,mercari-jp
