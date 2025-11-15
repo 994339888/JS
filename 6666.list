@@ -2,12 +2,12 @@
 # AUTHOR: YourName
 # REPO: https://github.com/your-repo/ios_rule_script
 # UPDATED: 2025-11-16
-# HOST: 12
+# HOST: 14
 # HOST-KEYWORD: 2
 # HOST-SUFFIX: 8
 # IP-ASN: 2
 # IP-CIDR: 4
-# TOTAL: 20
+# TOTAL: 22
 
 # Mercari相关的主域名和子域名
 HOST,mercari.com,mercari
@@ -22,6 +22,13 @@ HOST,review.mercari.com,mercari
 HOST,search.mercari.com,mercari
 HOST,inventory.mercari.com,mercari
 HOST,order.mercari.com,mercari
+
+# 从抓包中得到的Mercari相关的域名
+HOST,api.mercari.jp,mercari
+HOST,static.mercdn.net,mercari
+HOST,static.mercdn.net/item,mercari
+HOST,static.mercdn.net/thumb,mercari
+HOST,static.mercdn.net/images,mercari
 
 # Mercari相关的后缀域名
 HOST-SUFFIX,mercari.com,mercari
