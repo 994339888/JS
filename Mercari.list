@@ -1,49 +1,265 @@
-# NAME: Mercari
+# NAME: Mercari 完全覆盖规则
 
 # AUTHOR: Custom Rule
 
 # UPDATED: 2025-11-16
 
-# HOST: 2
+# 说明：此规则旨在 100% 覆盖 Mercari 应用的所有流量
 
-# HOST-SUFFIX: 12
+# PROCESS-NAME: 2
 
-# TOTAL: 14
+# USER-AGENT: 3
 
-# Mercari 主域名
+# HOST: 45
 
-HOST-SUFFIX,mercari.com,Mercari
-HOST-SUFFIX,mercari.jp,Mercari
+# HOST-SUFFIX: 35
 
-# Mercari 相关服务
+# HOST-KEYWORD: 3
 
-HOST-SUFFIX,mercarishops.com,Mercari
-HOST-SUFFIX,mercari.inc,Mercari
+# IP-CIDR: 5
 
-# 静态资源和 CDN
+# TOTAL: 93
 
-HOST-SUFFIX,mercari-assets.akamaized.net,Mercari
-HOST-SUFFIX,mercdn.net,Mercari
+# ========================================
 
-# API 和服务端点
+# 第一层：进程/应用匹配（最高优先级）
+
+# ========================================
+
+# 适用于 Surge
+
+# PROCESS-NAME,Mercari,Mercari
+
+# PROCESS-NAME,jp.mercari.mercari,Mercari
+
+# 适用于 Clash.Meta / Mihomo
+
+# - PROCESS-NAME,Mercari,Mercari
+
+# - PROCESS-NAME,jp.mercari.mercari,Mercari
+
+# 适用于 Quantumult X / Shadowrocket
+
+USER-AGENT,Mercari*,Mercari
+USER-AGENT,*Mercari*,Mercari
+USER-AGENT,jp.mercari*,Mercari
+
+# ========================================
+
+# 第二层：核心域名（100% Mercari 专属）
+
+# ========================================
+
+# — 登录和认证 —
+
+HOST,login.jp.mercari.com,Mercari
+HOST,login.mercari.com,Mercari
+HOST,auth.mercari.jp,Mercari
+HOST,auth.mercari.com,Mercari
+HOST,oauth.mercari.jp,Mercari
+HOST,oauth.mercari.com,Mercari
+HOST,account.mercari.com,Mercari
+HOST,account.mercari.jp,Mercari
+
+# — 主域名 —
+
+HOST,mercari.com,Mercari
+HOST,www.mercari.com,Mercari
+HOST,mercari.jp,Mercari
+HOST,www.mercari.jp,Mercari
+HOST,jp.mercari.com,Mercari
+HOST,us.mercari.com,Mercari
+HOST,m.mercari.com,Mercari
+HOST,m.mercari.jp,Mercari
+
+# — API 网关 —
 
 HOST,api.mercari.jp,Mercari
-HOST,jp.mercari.com,Mercari
+HOST,api.mercari.com,Mercari
+HOST,gateway.mercari.jp,Mercari
+HOST,gateway.mercari.com,Mercari
+HOST,api-gateway.mercari.jp,Mercari
 
-# 图片和媒体服务
+# — CDN 和静态资源 —
+
+HOST,web-auth-assets-v1.mercdn.net,Mercari
+HOST,web-auth-assets-v2.mercdn.net,Mercari
+HOST,assets.mercdn.net,Mercari
+HOST,static.mercdn.net,Mercari
+HOST,image.mercdn.net,Mercari
+HOST,img.mercdn.net,Mercari
+HOST,cdn.mercdn.net,Mercari
+HOST-SUFFIX,mercdn.net,Mercari
+
+# — Akamai CDN —
+
+HOST-SUFFIX,mercari-assets.akamaized.net,Mercari
+HOST-SUFFIX,mercari-images.akamaized.net,Mercari
+
+# — Fastly CDN —
 
 HOST-SUFFIX,mercari-images.global.ssl.fastly.net,Mercari
+HOST-SUFFIX,mercari.global.ssl.fastly.net,Mercari
 
-# 支付相关
+# — CloudFront CDN —
+
+HOST-SUFFIX,mercari.cloudfront.net,Mercari
+
+# ========================================
+
+# 第三层：Mercari 子服务
+
+# ========================================
+
+# — Mercari Shops —
+
+HOST-SUFFIX,mercarishops.com,Mercari
+HOST,www.mercarishops.com,Mercari
+HOST,api.mercarishops.com,Mercari
+
+# — Merpay (支付) —
 
 HOST-SUFFIX,merpay.com,Mercari
+HOST,api.merpay.com,Mercari
+HOST,checkout.merpay.com,Mercari
+HOST,payment.merpay.com,Mercari
+HOST,wallet.merpay.com,Mercari
 
-# 分析和监控
-
-HOST-SUFFIX,mercari-analytics.com,Mercari
-
-# 其他 Mercari 服务
+# — Mercoin (加密货币) —
 
 HOST-SUFFIX,mercoin.com,Mercari
+HOST,trade.mercoin.com,Mercari
+
+# ========================================
+
+# 第四层：功能服务
+
+# ========================================
+
+# — WebSocket 实时通信 —
+
+HOST,ws.mercari.jp,Mercari
+HOST,ws.mercari.com,Mercari
+HOST,websocket.mercari.jp,Mercari
+HOST,realtime.mercari.jp,Mercari
+
+# — 推送通知 —
+
+HOST,push.mercari.jp,Mercari
+HOST,push.mercari.com,Mercari
+HOST,notification.mercari.jp,Mercari
+HOST,notification.mercari.com,Mercari
+HOST,fcm.mercari.jp,Mercari
+
+# — 搜索服务 —
+
+HOST,search.mercari.jp,Mercari
+HOST,search.mercari.com,Mercari
+HOST,elasticsearch.mercari.jp,Mercari
+
+# — 分析和追踪 —
+
+HOST-SUFFIX,mercari-analytics.com,Mercari
+HOST-SUFFIX,mercari-app-analytics.com,Mercari
+HOST,analytics.mercari.jp,Mercari
+HOST,tracking.mercari.jp,Mercari
+HOST,metrics.mercari.jp,Mercari
+
+# — 上传服务 —
+
+HOST,upload.mercari.jp,Mercari
+HOST,upload.mercari.com,Mercari
+
+# — 下载服务 —
+
+HOST,download.mercari.jp,Mercari
+HOST,download.mercari.com,Mercari
+
+# ========================================
+
+# 第五层：企业和其他服务
+
+# ========================================
+
+HOST-SUFFIX,mercari.inc,Mercari
+HOST-SUFFIX,mercari-tech.com,Mercari
 HOST-SUFFIX,mercari.blog,Mercari
 HOST-SUFFIX,mercari.careers,Mercari
+HOST-SUFFIX,mercari.work,Mercari
+HOST-SUFFIX,mercariapp.page.link,Mercari
+
+# ========================================
+
+# 第六层：关键词匹配（兜底）
+
+# ========================================
+
+HOST-KEYWORD,mercari,Mercari
+HOST-KEYWORD,mercdn,Mercari
+HOST-KEYWORD,merpay,Mercari
+
+# ========================================
+
+# 第七层：IP 地址段
+
+# ========================================
+
+
+# 日本东京数据中心（常见）
+
+IP-CIDR,103.149.144.0/22,Mercari
+IP-CIDR,103.149.148.0/22,Mercari
+
+# AWS 日本区域（Mercari 使用）
+
+IP-CIDR,54.250.0.0/16,Mercari
+
+# ========================================
+
+# 配置说明
+
+# ========================================
+
+# 
+
+# 【Surge 用户】在配置文件中添加：
+
+# [Rule]
+
+# PROCESS-NAME,Mercari,Mercari-Proxy
+
+# RULE-SET,https://your-url/mercari.list,Mercari-Proxy
+
+# 
+
+# 【Clash.Meta 用户】在配置文件中添加：
+
+# rules:
+
+# - PROCESS-NAME,jp.mercari.mercari,Mercari
+
+# - RULE-SET,mercari,Mercari
+
+# 
+
+# 【Shadowrocket/Quantumult X 用户】：
+
+# 直接导入此规则文件即可
+
+# 
+
+# ========================================
+
+# 更新方法
+
+# ========================================
+
+# 1. 打开代理工具的「网络活动」或「日志」
+
+# 2. 使用 Mercari 应用的所有功能
+
+# 3. 记录所有未匹配的域名
+
+# 4. 添加到此规则列表
+
+# ========================================
