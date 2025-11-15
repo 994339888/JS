@@ -165,6 +165,11 @@ HOST,analytics.mercari.jp,Mercari
 HOST,tracking.mercari.jp,Mercari
 HOST,metrics.mercari.jp,Mercari
 
+# — AppsFlyer 移动归因（Mercari 专用）—
+
+HOST-SUFFIX,appsflyersdk.com,Mercari
+HOST,y5dvi5.inapps.appsflyersdk.com,Mercari
+
 # — 上传服务 —
 
 HOST,upload.mercari.jp,Mercari
