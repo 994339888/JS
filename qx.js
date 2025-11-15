@@ -904,9 +904,27 @@ function tag_handle(item) {
 }
 
 // 用于单条 URI 的 tag 参数, 直接指定节点名
-function URI_TAG(cnt0,tag0) {
-  cnt0 = cnt0.split("tag=")[0] + "tag=" + tag0
-  return cnt0
+//function URI_TAG(cnt0,tag0) {
+  //cnt0 = cnt0.split("tag=")[0] + "tag=" + tag0
+  //return cnt0
+//}
+// 用于单条 URI 的 tag 参数, 直接指定节点名
+function URI_TAG(cnt0, tag0) {
+  // 匹配域名部分
+  const domainRegex = /(?:https?:\/\/)?([^\/:]+)/;  // 匹配协议后的域名部分
+  const match = cnt0.match(domainRegex);
+
+  // 如果匹配到域名
+  if (match && match[1]) {
+    // 获取一级域名作为标签
+    const domain = match[1];
+    // 强制使用域名作为标签（如：www.example.com -> example）
+    const tag = domain.replace(/^www\./, '');  // 去掉www前缀（如果有的话）
+    
+    // 替换tag为域名
+    cnt0 = cnt0.split("tag=")[0] + "tag=" + tag;
+  }
+  return cnt0;
 }
 
 // 方便代理链的实现
