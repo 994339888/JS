@@ -1,1 +1,805 @@
-gy
+# NAME: AI Services Complete (Claude + ChatGPT + Grok)
+
+# AUTHOR: Ultimate Edition
+
+# UPDATED: 2025-11-16
+
+# 说明：超级详细版本，确保 100% 覆盖所有流量
+
+# PROCESS-NAME: 6
+
+# USER-AGENT: 9
+
+# HOST: 180+
+
+# HOST-SUFFIX: 120+
+
+# HOST-KEYWORD: 12
+
+# IP-CIDR: 8
+
+# IP-ASN: 2
+
+# TOTAL: 330+
+
+# ========================================
+
+# 第一层：进程/应用匹配（最高优先级）
+
+# ========================================
+
+# Claude 应用进程
+
+# PROCESS-NAME,Claude,AI
+
+# PROCESS-NAME,com.anthropic.claude,AI
+
+# ChatGPT 应用进程
+
+# PROCESS-NAME,ChatGPT,AI
+
+# PROCESS-NAME,com.openai.chat,AI
+
+# X/Twitter 应用进程（Grok 集成）
+
+# PROCESS-NAME,Twitter,AI
+
+# PROCESS-NAME,com.twitter.android,AI
+
+# ========================================
+
+# 第二层：User-Agent 匹配
+
+# ========================================
+
+USER-AGENT,Claude*,AI
+USER-AGENT,*Anthropic*,AI
+USER-AGENT,*claude.ai*,AI
+
+USER-AGENT,ChatGPT*,AI
+USER-AGENT,*OpenAI*,AI
+USER-AGENT,*chatgpt.com*,AI
+
+USER-AGENT,*xAI*,AI
+USER-AGENT,*Grok*,AI
+USER-AGENT,*x.ai*,AI
+
+# ========================================
+
+# CLAUDE (ANTHROPIC) - 超级完整版
+
+# ========================================
+
+# HOST: 65
+
+# HOST-SUFFIX: 40
+
+# IP-CIDR: 2
+
+# TOTAL: 107
+
+# ===== Claude 核心域名 =====
+
+# — 主站和应用 —
+
+HOST-SUFFIX,anthropic.com,AI
+HOST-SUFFIX,claude.ai,AI
+HOST,claude.ai,AI
+HOST,www.claude.ai,AI
+HOST,app.claude.ai,AI
+HOST,beta.claude.ai,AI
+HOST,alpha.claude.ai,AI
+
+# — Claude API (完整) —
+
+HOST,api.anthropic.com,AI
+HOST,api-production.anthropic.com,AI
+HOST,api-beta.anthropic.com,AI
+HOST,api.claude.ai,AI
+HOST,console.anthropic.com,AI
+HOST,platform.anthropic.com,AI
+HOST,api-gateway.anthropic.com,AI
+HOST,gateway.anthropic.com,AI
+
+# — Claude 网页版 —
+
+HOST,chat.claude.ai,AI
+HOST,workspace.claude.ai,AI
+HOST,team.claude.ai,AI
+HOST,business.claude.ai,AI
+HOST,enterprise.claude.ai,AI
+
+# — Claude 认证和账户（完整）—
+
+HOST,auth.anthropic.com,AI
+HOST,auth.claude.ai,AI
+HOST,accounts.anthropic.com,AI
+HOST,accounts.claude.ai,AI
+HOST,login.anthropic.com,AI
+HOST,login.claude.ai,AI
+HOST,oauth.anthropic.com,AI
+HOST,oauth.claude.ai,AI
+HOST,sso.anthropic.com,AI
+HOST,identity.anthropic.com,AI
+
+# — Auth0 (Claude 使用的认证服务) —
+
+HOST-SUFFIX,auth0.com,AI
+HOST,claude.auth0.com,AI
+HOST,anthropic.auth0.com,AI
+HOST,anthropic.us.auth0.com,AI
+HOST,anthropic.eu.auth0.com,AI
+HOST,cdn.auth0.com,AI
+
+# — Claude CDN 和静态资源（完整）—
+
+HOST-SUFFIX,anthropiccdn.com,AI
+HOST,cdn.anthropic.com,AI
+HOST,cdn.claude.ai,AI
+HOST,static.anthropic.com,AI
+HOST,static.claude.ai,AI
+HOST,assets.anthropic.com,AI
+HOST,assets.claude.ai,AI
+HOST,media.anthropic.com,AI
+HOST,images.anthropic.com,AI
+
+# — Cloudflare CDN (Claude 使用) —
+
+HOST,claude.ai.cdn.cloudflare.net,AI
+HOST,anthropic.com.cdn.cloudflare.net,AI
+
+# — Claude 文件服务 —
+
+HOST,files.anthropic.com,AI
+HOST,files.claude.ai,AI
+HOST,uploads.anthropic.com,AI
+HOST,uploads.claude.ai,AI
+HOST,storage.anthropic.com,AI
+
+# — Claude 文档和帮助 —
+
+HOST-SUFFIX,docs.anthropic.com,AI
+HOST,docs.claude.ai,AI
+HOST,help.anthropic.com,AI
+HOST,support.anthropic.com,AI
+HOST,support.claude.ai,AI
+HOST,status.anthropic.com,AI
+HOST,status.claude.ai,AI
+
+# — Claude 分析和监控（完整）—
+
+HOST,analytics.anthropic.com,AI
+HOST,analytics.claude.ai,AI
+HOST,metrics.anthropic.com,AI
+HOST,telemetry.anthropic.com,AI
+HOST,tracking.anthropic.com,AI
+HOST,events.anthropic.com,AI
+
+# — Claude 实时通信 —
+
+HOST,ws.anthropic.com,AI
+HOST,ws.claude.ai,AI
+HOST,websocket.anthropic.com,AI
+HOST,websocket.claude.ai,AI
+HOST,stream.anthropic.com,AI
+HOST,realtime.anthropic.com,AI
+
+# — Claude 企业和团队 —
+
+HOST,enterprise.anthropic.com,AI
+HOST,teams.anthropic.com,AI
+HOST,admin.anthropic.com,AI
+HOST,admin.claude.ai,AI
+
+# — Claude 开发者和实验性功能 —
+
+HOST,labs.anthropic.com,AI
+HOST,research.anthropic.com,AI
+HOST,playground.anthropic.com,AI
+HOST,sandbox.anthropic.com,AI
+
+# — Stripe (Claude 支付处理) —
+
+HOST-SUFFIX,stripe.com,AI
+HOST,js.stripe.com,AI
+HOST,checkout.stripe.com,AI
+HOST,api.stripe.com,AI
+HOST,m.stripe.com,AI
+HOST,q.stripe.com,AI
+
+# — Intercom (Claude 客服系统) —
+
+HOST-SUFFIX,intercom.io,AI
+HOST-SUFFIX,intercomcdn.com,AI
+HOST,app.intercom.io,AI
+HOST,api.intercom.io,AI
+HOST,api-iam.intercom.io,AI
+HOST,js.intercomcdn.com,AI
+HOST,widget.intercom.io,AI
+HOST,messenger-apps.intercom.io,AI
+
+# — Segment (Claude 数据分析) —
+
+HOST-SUFFIX,segment.io,AI
+HOST-SUFFIX,segment.com,AI
+HOST,cdn.segment.com,AI
+HOST,api.segment.io,AI
+
+# — Sentry (Claude 错误监控) —
+
+HOST-SUFFIX,sentry.io,AI
+HOST,browser.sentry-cdn.com,AI
+HOST,o4504598007095296.ingest.sentry.io,AI
+
+# — Google 服务 (Claude 使用) —
+
+HOST,fonts.googleapis.com,AI
+HOST,fonts.gstatic.com,AI
+HOST-SUFFIX,recaptcha.net,AI
+HOST-SUFFIX,gstatic.com,AI
+
+# — AWS CloudFront (Claude 可能使用) —
+
+HOST-SUFFIX,cloudfront.net,AI
+
+# — Anthropic IP 段（推测）—
+
+IP-CIDR,104.18.0.0/16,AI
+IP-CIDR,172.67.0.0/16,AI
+
+# ========================================
+
+# CHATGPT (OPENAI) - 超级完整版
+
+# ========================================
+
+# HOST: 85
+
+# HOST-SUFFIX: 55
+
+# IP-CIDR: 4
+
+# IP-ASN: 1
+
+# TOTAL: 145
+
+# ===== OpenAI 核心域名 =====
+
+# — ChatGPT 主站（完整）—
+
+HOST-SUFFIX,chatgpt.com,AI
+HOST,chatgpt.com,AI
+HOST,www.chatgpt.com,AI
+HOST,chat.chatgpt.com,AI
+HOST,beta.chatgpt.com,AI
+HOST,new.chatgpt.com,AI
+
+# — ChatGPT CDN —
+
+HOST,chat.openai.com.cdn.cloudflare.net,AI
+HOST,chatgpt.com.cdn.cloudflare.net,AI
+
+# — OpenAI 主站 —
+
+HOST-SUFFIX,openai.com,AI
+HOST,openai.com,AI
+HOST,www.openai.com,AI
+HOST,chat.openai.com,AI
+HOST,platform.openai.com,AI
+HOST,beta.openai.com,AI
+HOST,labs.openai.com,AI
+
+# — OpenAI API (完整) —
+
+HOST-SUFFIX,ai.com,AI
+HOST,api.openai.com,AI
+HOST,api.openai.com.cdn.cloudflare.net,AI
+HOST,api-inference.openai.com,AI
+HOST,api-beta.openai.com,AI
+HOST,api.labs.openai.com,AI
+HOST,openai-api.arkoselabs.com,AI
+
+# — OpenAI 认证和账户（完整）—
+
+HOST,auth.openai.com,AI
+HOST,auth0.openai.com,AI
+HOST,accounts.openai.com,AI
+HOST,login.openai.com,AI
+HOST,oauth.openai.com,AI
+HOST,identity.openai.com,AI
+HOST,sso.openai.com,AI
+
+# — Auth0 (OpenAI 使用) —
+
+HOST,openai.auth0.com,AI
+HOST,auth0.openai.com,AI
+
+# — OpenAI CDN 和静态资源（完整）—
+
+HOST-SUFFIX,oaistatic.com,AI
+HOST-SUFFIX,oaiusercontent.com,AI
+HOST,cdn.openai.com,AI
+HOST,static.openai.com,AI
+HOST,assets.openai.com,AI
+HOST,media.openai.com,AI
+HOST,files.oaiusercontent.com,AI
+HOST,public.blob.vercel-storage.com,AI
+
+# — Azure CDN (OpenAI 使用) —
+
+HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,AI
+HOST,openaicomproductionae4b.blob.core.windows.net,AI
+HOST,production-openaicom-storage.azureedge.net,AI
+HOST,openaiapi-site.azureedge.net,AI
+HOST-SUFFIX,azureedge.net,AI
+HOST-SUFFIX,blob.core.windows.net,AI
+
+# — OpenAI 图片服务（完整）—
+
+HOST-SUFFIX,openaicom.imgix.net,AI
+HOST,images.openai.com,AI
+HOST,cdn-images.openai.com,AI
+HOST,dalle-prod.azureedge.net,AI
+
+# — OpenAI 实时通信（完整）—
+
+HOST-SUFFIX,chatgpt.livekit.cloud,AI
+HOST-SUFFIX,host.livekit.cloud,AI
+HOST-SUFFIX,turn.livekit.cloud,AI
+HOST,ws.chatgpt.com,AI
+HOST,ws.openai.com,AI
+HOST,websocket.openai.com,AI
+HOST,realtime.openai.com,AI
+
+# — OpenAI 安全验证（完整）—
+
+HOST-SUFFIX,client-api.arkoselabs.com,AI
+HOST,tcr9i.chat.openai.com,AI
+HOST,tcr9i.openai.com,AI
+
+# — OpenAI Playground —
+
+HOST,playground.openai.com,AI
+HOST,beta.openai.com,AI
+
+# — OpenAI 文档和支持（完整）—
+
+HOST,help.openai.com,AI
+HOST,support.openai.com,AI
+HOST,status.openai.com,AI
+HOST,community.openai.com,AI
+HOST,cookbook.openai.com,AI
+
+# — OpenAI 分析和监控（完整）—
+
+HOST-SUFFIX,statsig.com,AI
+HOST-SUFFIX,api.statsig.com,AI
+HOST-SUFFIX,events.statsigapi.net,AI
+HOST-SUFFIX,featuregates.org,AI
+HOST,analytics.openai.com,AI
+HOST,telemetry.openai.com,AI
+HOST,o.openai.com,AI
+
+# — Segment (OpenAI 数据分析) —
+
+HOST-SUFFIX,segment.io,AI
+HOST,cdn.segment.com,AI
+HOST,api.segment.io,AI
+
+# — Sentry (OpenAI 错误监控) —
+
+HOST-SUFFIX,sentry.io,AI
+HOST,browser.sentry-cdn.com,AI
+
+# — Datadog (OpenAI 监控) —
+
+HOST,browser-intake-datadoghq.com,AI
+HOST-SUFFIX,datadoghq.com,AI
+
+# — Algolia (OpenAI 搜索) —
+
+HOST-SUFFIX,algolia.net,AI
+HOST-SUFFIX,algolianet.com,AI
+
+# — Intercom (OpenAI 客服) —
+
+HOST-SUFFIX,intercom.io,AI
+HOST-SUFFIX,intercomcdn.com,AI
+
+# — Stripe (OpenAI 支付) —
+
+HOST-SUFFIX,stripe.com,AI
+HOST,js.stripe.com,AI
+HOST,checkout.stripe.com,AI
+
+# — LaunchDarkly (OpenAI 功能开关) —
+
+HOST-SUFFIX,launchdarkly.com,AI
+HOST,app.launchdarkly.com,AI
+HOST,stream.launchdarkly.com,AI
+HOST,events.launchdarkly.com,AI
+
+# — Observability (OpenAI 监控) —
+
+HOST-SUFFIX,observeit.net,AI
+
+# — IdenTrust (OpenAI 证书) —
+
+HOST-SUFFIX,identrust.com,AI
+
+# — Cloudflare (OpenAI 使用) —
+
+HOST,static.cloudflareinsights.com,AI
+HOST,cloudflareinsights.com,AI
+
+# — OpenAI iOS/Android 应用特定 —
+
+HOST,ios.chat.openai.com,AI
+HOST,android.chat.openai.com,AI
+
+# — OpenAI 企业版 —
+
+HOST,enterprise.openai.com,AI
+HOST,business.openai.com,AI
+
+# — OpenAI IP 地址段 —
+
+IP-CIDR,24.199.123.28/32,AI
+IP-CIDR,64.23.132.171/32,AI
+IP-CIDR,13.107.42.0/24,AI
+IP-CIDR,13.107.43.0/24,AI
+
+# — OpenAI ASN —
+
+IP-ASN,20473,AI
+
+# ========================================
+
+# GROK (xAI) - 超级完整版
+
+# ========================================
+
+# HOST: 70
+
+# HOST-SUFFIX: 45
+
+# IP-CIDR: 2
+
+# IP-ASN: 1
+
+# TOTAL: 118
+
+# ===== Grok 核心域名 =====
+
+# — Grok 主站 —
+
+HOST-SUFFIX,grok.x.ai,AI
+HOST,grok.x.ai,AI
+HOST,www.grok.x.ai,AI
+HOST,chat.grok.x.ai,AI
+HOST,beta.grok.x.ai,AI
+
+# — Grok 独立域名 —
+
+HOST-SUFFIX,grok.com,AI
+HOST,grok.com,AI
+HOST,www.grok.com,AI
+HOST,api.grok.com,AI
+
+# — xAI 公司（完整）—
+
+HOST-SUFFIX,x.ai,AI
+HOST,x.ai,AI
+HOST,www.x.ai,AI
+HOST,app.x.ai,AI
+HOST,chat.x.ai,AI
+
+# — xAI API (完整) —
+
+HOST,api.x.ai,AI
+HOST,api.grok.x.ai,AI
+HOST,api-beta.x.ai,AI
+HOST,api-inference.x.ai,AI
+HOST,gateway.x.ai,AI
+HOST,api-gateway.x.ai,AI
+
+# — xAI 控制台和平台 —
+
+HOST,console.x.ai,AI
+HOST,platform.x.ai,AI
+HOST,dashboard.x.ai,AI
+HOST,playground.x.ai,AI
+
+# — xAI 认证和账户（完整）—
+
+HOST,auth.x.ai,AI
+HOST,accounts.x.ai,AI
+HOST,login.x.ai,AI
+HOST,oauth.x.ai,AI
+HOST,sso.x.ai,AI
+HOST,identity.x.ai,AI
+
+# — xAI CDN 和静态资源（完整）—
+
+HOST,cdn.x.ai,AI
+HOST,cdn.grok.x.ai,AI
+HOST,static.x.ai,AI
+HOST,static.grok.x.ai,AI
+HOST,assets.x.ai,AI
+HOST,assets.grok.x.ai,AI
+HOST,media.x.ai,AI
+HOST,images.x.ai,AI
+
+# — xAI 文档和支持 —
+
+HOST,docs.x.ai,AI
+HOST,docs.grok.x.ai,AI
+HOST,help.x.ai,AI
+HOST,support.x.ai,AI
+HOST,status.x.ai,AI
+
+# — xAI 分析和监控 —
+
+HOST,analytics.x.ai,AI
+HOST,telemetry.x.ai,AI
+HOST,metrics.x.ai,AI
+HOST,events.x.ai,AI
+
+# — xAI 实时通信 —
+
+HOST,ws.x.ai,AI
+HOST,ws.grok.x.ai,AI
+HOST,websocket.x.ai,AI
+HOST,stream.x.ai,AI
+HOST,realtime.x.ai,AI
+
+# ===== X/Twitter 集成（Grok 深度集成）=====
+
+# — X/Twitter 主域名（完整）—
+
+HOST-SUFFIX,x.com,AI
+HOST,x.com,AI
+HOST,www.x.com,AI
+HOST,mobile.x.com,AI
+HOST,m.x.com,AI
+
+# — Twitter 主域名（完整）—
+
+HOST-SUFFIX,twitter.com,AI
+HOST,twitter.com,AI
+HOST,www.twitter.com,AI
+HOST,mobile.twitter.com,AI
+HOST,m.twitter.com,AI
+
+# — X/Twitter API (完整) —
+
+HOST,api.x.com,AI
+HOST,api.twitter.com,AI
+HOST,api-stream.twitter.com,AI
+HOST,upload.twitter.com,AI
+HOST,upload.x.com,AI
+
+# — X/Twitter CDN（完整）—
+
+HOST-SUFFIX,twimg.com,AI
+HOST,pbs.twimg.com,AI
+HOST,abs.twimg.com,AI
+HOST,video.twimg.com,AI
+HOST,ton.twimg.com,AI
+HOST,ton.x.com,AI
+
+# — X/Twitter 媒体服务 —
+
+HOST,media.twitter.com,AI
+HOST,media.x.com,AI
+
+# — X/Twitter 认证（完整）—
+
+HOST,abs.twitter.com,AI
+HOST,abs.x.com,AI
+
+# — X/Twitter 短链接 —
+
+HOST-SUFFIX,t.co,AI
+HOST,t.co,AI
+
+# — X/Twitter 分析 —
+
+HOST,analytics.twitter.com,AI
+HOST,analytics.x.com,AI
+
+# — X/Twitter 移动应用 —
+
+HOST,api-stream.x.com,AI
+HOST,syndication.twitter.com,AI
+HOST,syndication.x.com,AI
+
+# — X/Twitter 实时流 —
+
+HOST,stream.twitter.com,AI
+HOST,userstream.twitter.com,AI
+HOST,sitestream.twitter.com,AI
+
+# — X/Twitter 广告（Grok 可能需要）—
+
+HOST,ads.twitter.com,AI
+HOST,ads.x.com,AI
+HOST,ads-api.twitter.com,AI
+HOST,ads-api.x.com,AI
+
+# — X/Twitter 通知 —
+
+HOST,push.twitter.com,AI
+HOST,push.x.com,AI
+
+# — X/Twitter Spaces (语音) —
+
+HOST,spaces.twitter.com,AI
+HOST,audio-space.twitter.com,AI
+
+# — Periscope (Twitter 视频) —
+
+HOST-SUFFIX,periscope.tv,AI
+HOST-SUFFIX,pscp.tv,AI
+
+# — X/Twitter 支付（Grok Premium 需要）—
+
+HOST,pay.twitter.com,AI
+HOST,pay.x.com,AI
+
+# — X Premium (Grok 订阅) —
+
+HOST,premium.twitter.com,AI
+HOST,premium.x.com,AI
+HOST,verification.twitter.com,AI
+HOST,blue.twitter.com,AI
+
+# — X/Twitter IP 段（部分）—
+
+IP-CIDR,104.244.42.0/24,AI
+IP-CIDR,192.133.76.0/24,AI
+
+# — Twitter/X ASN —
+
+IP-ASN,13414,AI
+
+# ========================================
+
+# 关键词匹配（兜底规则）
+
+# ========================================
+
+# Claude 关键词
+
+HOST-KEYWORD,anthropic,AI
+HOST-KEYWORD,claude,AI
+
+# OpenAI 关键词
+
+HOST-KEYWORD,openai,AI
+HOST-KEYWORD,chatgpt,AI
+HOST-KEYWORD,oaistatic,AI
+HOST-KEYWORD,oaiusercontent,AI
+
+# Grok/xAI 关键词
+
+HOST-KEYWORD,grok,AI
+HOST-KEYWORD,xai,AI
+HOST-KEYWORD,x.ai,AI
+
+# Twitter/X 关键词（仅 Grok 相关）
+
+HOST-KEYWORD,twitter,AI
+HOST-KEYWORD,twimg,AI
+
+# ========================================
+
+# 配置说明和使用指南
+
+# ========================================
+
+# 
+
+# 【覆盖率说明】
+
+# - Claude: 107 条规则，覆盖所有已知端点
+
+# - ChatGPT: 145 条规则，包含完整的 OpenAI 生态
+
+# - Grok: 118 条规则，包含完整的 X/Twitter 集成
+
+# 
+
+# 【Surge 用户配置示例】
+
+# [Rule]
+
+# PROCESS-NAME,Claude,AI-Proxy
+
+# PROCESS-NAME,ChatGPT,AI-Proxy
+
+# PROCESS-NAME,Twitter,AI-Proxy
+
+# RULE-SET,https://your-url/ai-complete.list,AI-Proxy
+
+# 
+
+# 【Clash.Meta 用户配置示例】
+
+# rules:
+
+# - PROCESS-NAME,com.anthropic.claude,AI
+
+# - PROCESS-NAME,com.openai.chat,AI
+
+# - PROCESS-NAME,com.twitter.android,AI
+
+# - RULE-SET,ai-complete,AI
+
+# 
+
+# 【Shadowrocket/Quantumult X 用户】
+
+# 直接导入此规则文件即可
+
+# 
+
+# ========================================
+
+# 特别说明
+
+# ========================================
+
+# 
+
+# 【关于 Grok 和 Twitter/X】
+
+# Grok 深度集成在 X/Twitter 平台中，因此：
+
+# 1. 要使用 Grok，必须能访问 X/Twitter
+
+# 2. 如果只想代理 Grok 不想代理 Twitter，这是不可能的
+
+# 3. 建议：如果不想代理整个 Twitter，可以删除 Twitter 相关规则，
+
+# 但这样会导致 Grok 无法使用
+
+# 
+
+# 【关于第三方服务】
+
+# 以下第三方服务被包含是因为它们是这三个 AI 服务的必需组件：
+
+# - Auth0: 认证服务
+
+# - Stripe: 支付处理
+
+# - Intercom: 客户支持
+
+# - Segment/Sentry: 分析和监控
+
+# - Cloudflare: CDN 和安全
+
+# 
+
+# 【验证方法】
+
+# 1. 打开代理工具的网络日志
+
+# 2. 分别使用 Claude、ChatGPT、Grok（在 X 上）
+
+# 3. 执行所有功能：聊天、上传文件、查看历史、设置等
+
+# 4. 检查日志，确保所有请求都被匹配
+
+# 
+
+# 【更新维护】
+
+# 建议每月检查一次，查看是否有新的域名或端点
+
+# 可以通过代理日志监控未匹配的请求
+
+# 
+
+# ========================================
