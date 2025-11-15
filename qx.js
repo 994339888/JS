@@ -4,7 +4,7 @@
 🛠 发现 𝐁𝐔𝐆 请反馈: https://t.me/@iOSida
 ⛳️ 关注 🆃🅶 作者: https://t.me/@iOSida
 📖 使用 
-🗣 🆃🄷🄰🄽🄺🅂 🆃🄾  @Jamie CHIEN, @M**F**, @c0lada, @Peng-YM, @vinewx, @love4taylor, @shadowdogy 
+🗣  vx IDA00777
 
 🤖 主要功能: 
 ❶ 将其它格式的⟦服务器订阅⟧解析成 𝐐𝐮𝐚𝐧𝐭𝐮𝐦𝐮𝐥𝐭 𝐗 格式
