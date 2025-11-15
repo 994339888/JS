@@ -1,54 +1,49 @@
 # NAME: Mercari
-# AUTHOR: YourName
-# REPO: https://github.com/your-repo/ios_rule_script
+
+# AUTHOR: Custom Rule
+
 # UPDATED: 2025-11-16
-# HOST: 14
-# HOST-KEYWORD: 2
-# HOST-SUFFIX: 8
-# IP-ASN: 2
-# IP-CIDR: 4
-# TOTAL: 22
 
-# Mercari相关的主域名和子域名
-HOST,mercari.com,mercari
-HOST,static.mercari.com,mercari
-HOST,m.mercari.com,mercari
-HOST,api.mercari.com,mercari
-HOST,cdn.mercari.com,mercari
-HOST,auction.mercari.com,mercari
-HOST,secure.mercari.com,mercari
-HOST,account.mercari.com,mercari
-HOST,review.mercari.com,mercari
-HOST,search.mercari.com,mercari
-HOST,inventory.mercari.com,mercari
-HOST,order.mercari.com,mercari
+# HOST: 2
 
-# 从抓包中得到的Mercari相关的域名
-HOST,api.mercari.jp,mercari
-HOST,static.mercdn.net,mercari
+# HOST-SUFFIX: 12
 
+# TOTAL: 14
 
-# Mercari相关的后缀域名
-HOST-SUFFIX,mercari.com,mercari
-HOST-SUFFIX,mercariapi.com,mercari
-HOST-SUFFIX,mercariimg.com,mercari
-HOST-SUFFIX,mercariassets.com,mercari
-HOST-SUFFIX,mercaristatic.com,mercari
-HOST-SUFFIX,mercariapp.com,mercari
-HOST-SUFFIX,mercariuser.com,mercari
-HOST-SUFFIX,mercariimage.com,mercari
+# Mercari 主域名
 
-# Mercari相关的关键字
-HOST-KEYWORD,mercari,mercari
-HOST-KEYWORD,mercariapi,mercari
-HOST-KEYWORD,mercariapp,mercari
+HOST-SUFFIX,mercari.com,Mercari
+HOST-SUFFIX,mercari.jp,Mercari
 
-# Mercari相关的IP段
-IP-CIDR,203.144.191.0/24,mercari
-IP-CIDR,110.93.198.0/24,mercari
-IP-CIDR,103.21.190.0/24,mercari
-IP-CIDR,185.59.222.0/24,mercari
+# Mercari 相关服务
 
-# Mercari相关的ASN
-IP-ASN,13986,mercari
-IP-ASN,13335,mercari
+HOST-SUFFIX,mercarishops.com,Mercari
+HOST-SUFFIX,mercari.inc,Mercari
+
+# 静态资源和 CDN
+
+HOST-SUFFIX,mercari-assets.akamaized.net,Mercari
+HOST-SUFFIX,mercdn.net,Mercari
+
+# API 和服务端点
+
+HOST,api.mercari.jp,Mercari
+HOST,jp.mercari.com,Mercari
+
+# 图片和媒体服务
+
+HOST-SUFFIX,mercari-images.global.ssl.fastly.net,Mercari
+
+# 支付相关
+
+HOST-SUFFIX,merpay.com,Mercari
+
+# 分析和监控
+
+HOST-SUFFIX,mercari-analytics.com,Mercari
+
+# 其他 Mercari 服务
+
+HOST-SUFFIX,mercoin.com,Mercari
+HOST-SUFFIX,mercari.blog,Mercari
+HOST-SUFFIX,mercari.careers,Mercari
