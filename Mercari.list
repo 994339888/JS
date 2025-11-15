@@ -23,11 +23,10 @@ HOST,search.mercari.com,mercari
 HOST,inventory.mercari.com,mercari
 HOST,order.mercari.com,mercari
 
-# Mercari相关的其他域名（从抓包中获得）
+# 从抓包中得到的Mercari相关的域名
 HOST,api.mercari.jp,mercari
 HOST,static.mercdn.net,mercari
-HOST,static.mercdn.net/thumb,mercari
-HOST,static.mercdn.net/images,mercari
+
 
 # Mercari相关的后缀域名
 HOST-SUFFIX,mercari.com,mercari
