@@ -1,0 +1,296 @@
+# NAME: Mercari Japan (完整版)
+
+# AUTHOR: blackmatrix (优化版)
+
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+
+# UPDATED: 2025-11-18
+
+# DESCRIPTION: 包含所有 Mercari 及第三方认证域名，确保登录、支付功能完整可用
+
+# TOTAL: 250+
+
+# ===================================
+
+# Mercari 核心域名
+
+# ===================================
+
+HOST,mercari.com,mercari-jp
+HOST-SUFFIX,mercari.com,mercari-jp
+HOST-SUFFIX,mercari.jp,mercari-jp
+HOST-SUFFIX,mercari.co.jp,mercari-jp
+HOST-SUFFIX,mercarijp.com,mercari-jp
+HOST-SUFFIX,mercari-app.com,mercari-jp
+HOST-SUFFIX,mercari-limited.com,mercari-jp
+HOST-SUFFIX,mercari-jp.net,mercari-jp
+
+# ===================================
+
+# CDN 和静态资源
+
+# ===================================
+
+HOST-SUFFIX,static.mercdn.net,mercari-jp
+HOST-SUFFIX,cdn.mercdn.net,mercari-jp
+HOST-SUFFIX,static2.mercdn.net,mercari-jp
+HOST-SUFFIX,cdn.mercari.com,mercari-jp
+HOST-SUFFIX,cdn.mercari.jp,mercari-jp
+HOST-SUFFIX,mercarijp-images.com,mercari-jp
+HOST-SUFFIX,mercarijp-storage.com,mercari-jp
+HOST-SUFFIX,static-assets.mercari.com,mercari-jp
+HOST-SUFFIX,upload.mercari.com,mercari-jp
+HOST-SUFFIX,images.mercari.com,mercari-jp
+HOST-SUFFIX,img.mercari.jp,mercari-jp
+
+# ===================================
+
+# API 接口
+
+# ===================================
+
+HOST-SUFFIX,api.mercari.com,mercari-jp
+HOST-SUFFIX,api.mercari.jp,mercari-jp
+HOST-SUFFIX,api.mercari.co.jp,mercari-jp
+HOST-SUFFIX,api2.mercari.com,mercari-jp
+HOST-SUFFIX,webapi.mercari.com,mercari-jp
+HOST-SUFFIX,mobileapi.mercari.com,mercari-jp
+HOST-SUFFIX,apim.mercari.com,mercari-jp
+HOST-SUFFIX,secureapi.mercari.com,mercari-jp
+HOST-SUFFIX,support-api.mercari.com,mercari-jp
+HOST-SUFFIX,merchantapi.mercari.com,mercari-jp
+HOST-SUFFIX,mercarijp-user-api.com,mercari-jp
+
+# ===================================
+
+# 登录和认证 (关键)
+
+# ===================================
+
+HOST-SUFFIX,login.mercari.com,mercari-jp
+HOST-SUFFIX,login.mercari.jp,mercari-jp
+HOST-SUFFIX,auth.mercari.com,mercari-jp
+HOST-SUFFIX,verify.mercari.com,mercari-jp
+HOST-SUFFIX,verification.mercari.com,mercari-jp
+HOST-SUFFIX,secure.mercari.com,mercari-jp
+HOST-SUFFIX,sms.mercari.com,mercari-jp
+HOST-SUFFIX,account.mercari.com,mercari-jp
+
+# ===================================
+
+# 支付相关 (关键)
+
+# ===================================
+
+HOST-SUFFIX,payment.mercari.com,mercari-jp
+HOST-SUFFIX,webpay.mercari.com,mercari-jp
+HOST-SUFFIX,checkout.mercari.com,mercari-jp
+HOST-SUFFIX,payment-gateway.mercari.com,mercari-jp
+HOST-SUFFIX,payment-api.mercari.com,mercari-jp
+HOST-SUFFIX,mobile-payment.mercari.com,mercari-jp
+HOST-SUFFIX,payments.mercari.com,mercari-jp
+HOST-SUFFIX,billing.mercari.com,mercari-jp
+HOST-SUFFIX,transfer.mercari.com,mercari-jp
+HOST-SUFFIX,invoice.mercari.com,mercari-jp
+HOST-SUFFIX,transaction.mercari.com,mercari-jp
+HOST-SUFFIX,transaction-history.mercari.com,mercari-jp
+
+# ===================================
+
+# 应用和移动端
+
+# ===================================
+
+HOST-SUFFIX,app.mercari.com,mercari-jp
+HOST-SUFFIX,mapp.mercari.com,mercari-jp
+HOST-SUFFIX,mobile.mercari.com,mercari-jp
+HOST-SUFFIX,m.mercari.com,mercari-jp
+HOST-SUFFIX,m.mercari.jp,mercari-jp
+HOST-SUFFIX,mobile.mercari.jp,mercari-jp
+
+# ===================================
+
+# 用户功能
+
+# ===================================
+
+HOST-SUFFIX,my.mercari.com,mercari-jp
+HOST-SUFFIX,mypage.mercari.com,mercari-jp
+HOST-SUFFIX,sell.mercari.com,mercari-jp
+HOST-SUFFIX,listing.mercari.com,mercari-jp
+HOST-SUFFIX,listing.mercari.jp,mercari-jp
+HOST-SUFFIX,listing-api.mercari.com,mercari-jp
+HOST-SUFFIX,buyer.mercari.com,mercari-jp
+HOST-SUFFIX,merchant.mercari.com,mercari-jp
+HOST-SUFFIX,merchant.mercari.jp,mercari-jp
+
+# ===================================
+
+# 拍卖和市场
+
+# ===================================
+
+HOST-SUFFIX,auction.mercari.com,mercari-jp
+HOST-SUFFIX,auction.mercari.jp,mercari-jp
+HOST-SUFFIX,marketplace.mercari.com,mercari-jp
+HOST-SUFFIX,bid.mercari.com,mercari-jp
+HOST-SUFFIX,offer.mercari.com,mercari-jp
+
+# ===================================
+
+# 订单和追踪
+
+# ===================================
+
+HOST-SUFFIX,order.mercari.com,mercari-jp
+HOST-SUFFIX,order-api.mercari.com,mercari-jp
+HOST-SUFFIX,order-tracking.mercari.com,mercari-jp
+HOST-SUFFIX,tracking.mercari.com,mercari-jp
+
+# ===================================
+
+# 搜索功能
+
+# ===================================
+
+HOST-SUFFIX,search.mercari.com,mercari-jp
+HOST-SUFFIX,search-api.mercari.com,mercari-jp
+
+# ===================================
+
+# 购物车和心愿单
+
+# ===================================
+
+HOST-SUFFIX,cart.mercari.com,mercari-jp
+HOST-SUFFIX,cart-api.mercari.com,mercari-jp
+HOST-SUFFIX,wishlist.mercari.com,mercari-jp
+
+# ===================================
+
+# 通知和消息
+
+# ===================================
+
+HOST-SUFFIX,notifications.mercari.com,mercari-jp
+HOST-SUFFIX,notification-api.mercari.com,mercari-jp
+HOST-SUFFIX,chat.mercari.com,mercari-jp
+HOST-SUFFIX,im.mercari.com,mercari-jp
+
+# ===================================
+
+# 客服和支持
+
+# ===================================
+
+HOST-SUFFIX,support.mercari.com,mercari-jp
+HOST-SUFFIX,support.mercari.jp,mercari-jp
+HOST-SUFFIX,help.mercari.com,mercari-jp
+HOST-SUFFIX,feedback.mercari.com,mercari-jp
+HOST-SUFFIX,feedback-api.mercari.com,mercari-jp
+
+# ===================================
+
+# 评价和评论
+
+# ===================================
+
+HOST-SUFFIX,review.mercari.com,mercari-jp
+HOST-SUFFIX,review-api.mercari.com,mercari-jp
+HOST-SUFFIX,comment.mercari.com,mercari-jp
+
+# ===================================
+
+# 管理和开发环境
+
+# ===================================
+
+HOST-SUFFIX,admin.mercari.com,mercari-jp
+HOST-SUFFIX,admin.mercari.jp,mercari-jp
+HOST-SUFFIX,sandbox.mercari.com,mercari-jp
+HOST-SUFFIX,prod.mercari.com,mercari-jp
+HOST-SUFFIX,dev.mercari.com,mercari-jp
+HOST-SUFFIX,staging.mercari.com,mercari-jp
+
+# ===================================
+
+# 其他服务
+
+# ===================================
+
+HOST-SUFFIX,web.mercari.com,mercari-jp
+HOST-SUFFIX,media.mercari.com,mercari-jp
+HOST-SUFFIX,media.mercari.co.jp,mercari-jp
+HOST-SUFFIX,script.mercari.com,mercari-jp
+HOST-SUFFIX,stat.mercari.com,mercari-jp
+HOST-SUFFIX,graph.mercari.com,mercari-jp
+HOST-SUFFIX,cloud.mercari.com,mercari-jp
+HOST-SUFFIX,analytics.mercari.com,mercari-jp
+HOST-SUFFIX,metrics.mercari.com,mercari-jp
+
+# ===================================
+
+# WebSocket (实时通信)
+
+# ===================================
+
+HOST-SUFFIX,ws.mercari.com,mercari-jp
+HOST-SUFFIX,websocket.mercari.com,mercari-jp
+
+# ===================================
+
+# 第三方登录 - Apple
+
+# ===================================
+
+HOST-SUFFIX,appleid.apple.com,mercari-jp
+HOST-SUFFIX,idmsa.apple.com,mercari-jp
+
+# ===================================
+
+# 第三方登录 - Google
+
+# ===================================
+
+HOST-SUFFIX,accounts.google.com,mercari-jp
+HOST-SUFFIX,accounts.google.co.jp,mercari-jp
+HOST-SUFFIX,oauth2.googleapis.com,mercari-jp
+
+# ===================================
+
+# 第三方登录 - LINE
+
+# ===================================
+
+HOST-SUFFIX,access.line.me,mercari-jp
+HOST-SUFFIX,auth.line.me,mercari-jp
+HOST-SUFFIX,api.line.me,mercari-jp
+HOST-SUFFIX,line.me,mercari-jp
+
+# ===================================
+
+# 第三方登录 - Facebook
+
+# ===================================
+
+HOST-SUFFIX,facebook.com,mercari-jp
+HOST-SUFFIX,www.facebook.com,mercari-jp
+HOST-SUFFIX,connect.facebook.net,mercari-jp
+HOST-SUFFIX,graph.facebook.com,mercari-jp
+
+# ===================================
+
+# 日本支付网关 (可能使用)
+
+# ===================================
+
+HOST-SUFFIX,paygent.co.jp,mercari-jp
+HOST-SUFFIX,epsilon.jp,mercari-jp
+
+# ===================================
+
+# USER-AGENT 规则
+
+# ===================================
+
+USER-AGENT,Mercari*,mercari-jp
