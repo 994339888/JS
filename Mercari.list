@@ -107,4 +107,31 @@ HOST-SUFFIX,notification-api.mercari.com,mercari-jp
 HOST-SUFFIX,order-api.mercari.com,mercari-jp
 HOST-SUFFIX,review-api.mercari.com,mercari-jp
 HOST-SUFFIX,payments.mercari.com,mercari-jp
+# 原有的 Mercari 域名规则
+
+# === 第三方认证服务 ===
+# Apple Sign In
+HOST-SUFFIX,appleid.apple.com,mercari-jp
+HOST-SUFFIX,idmsa.apple.com,mercari-jp
+
+# Google OAuth
+HOST-SUFFIX,accounts.google.com,mercari-jp
+HOST-SUFFIX,accounts.google.co.jp,mercari-jp
+HOST-SUFFIX,oauth2.googleapis.com,mercari-jp
+
+# LINE Login
+HOST-SUFFIX,access.line.me,mercari-jp
+HOST-SUFFIX,auth.line.me,mercari-jp
+HOST-SUFFIX,api.line.me,mercari-jp
+HOST-SUFFIX,line.me,mercari-jp
+
+# Facebook Login
+HOST-SUFFIX,facebook.com,mercari-jp
+HOST-SUFFIX,connect.facebook.net,mercari-jp
+HOST-SUFFIX,graph.facebook.com,mercari-jp
+HOST-SUFFIX,www.facebook.com,mercari-jp
+
+# === 可能的支付网关 ===
+HOST-SUFFIX,paygent.co.jp,mercari-jp
+HOST-SUFFIX,epsilon.jp,mercari-jp
 HOST-SUFFIX,order-tracking.mercari.com,mercari-jp
