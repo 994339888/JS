@@ -3,7 +3,7 @@
 
 [rewrite_local] 
 # Mercari 首页商品流接口（真正的数据）
-^https?:\/\/api\.mercari\.jp\/store\/get_items url script-response-body https://raw.githubusercontent.com/994339888/JS/main/JP.js
+^https?:\/\/api\.mercari\.jp\/store\/get_items url script-response-body https://raw.githubusercontent.com/994339888/JS/main/JP888.js
 
 [MITM]
 hostname = api.mercari.jp
