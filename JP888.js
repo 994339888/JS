@@ -8,33 +8,20 @@
 [MITM]
 hostname = api.mercari.jp
 
+/*
+  隐藏首页顶部（分类 / banner / 推荐标签）
 */
 
 try {
     let obj = JSON.parse($response.body);
 
-    if (obj?.data && Array.isArray(obj.data)) {
-
-        const keywords = [
-            "iphone",
-            "アイフォン",
-            "apple",
-            "アップル",
-            "本体",
-            "携帯",
-            "スマホ",
-            "ケース"
-        ];
-
-        obj.data = obj.data.filter(item => {
-            let title = (item?.name || "").toLowerCase();
-            return keywords.some(k => title.includes(k.toLowerCase()));
-        });
+    if (obj?.data?.sections) {
+        obj.data.sections = [];   // 清空顶部模块
     }
 
     $done({ body: JSON.stringify(obj) });
 
 } catch (e) {
-    console.log("JP Mercari iPhone filter error: " + e);
+    console.log("Hide Home Error: " + e);
     $done($response);
 }
