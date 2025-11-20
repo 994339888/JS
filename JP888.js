@@ -1,29 +1,17 @@
-/*******************************
- * Mercari 首页极速优化 + 授权系统
- *******************************/
-const authUrl = "https://cdn.jsdelivr.net/gh/994339888/JS/key.txt";
+/*        
+        ➪：JP APP ✦ Mercari 首页极速清爽脚本 ✦
 
-$httpClient.get(authUrl, function(error, resp, data) {
+📌 功能：
+    - 首页清空（更快、更干净）
+    - 不依赖密钥、不依赖授权、不出错
+    - 适合需要稳定使用、简单使用的人
+*/
 
-    if (error || resp.status !== 200) {
-        $done({ body: "{}" });
-        return;
-    }
+const minimalResponse = {
+    data: [],
+    meta: { status: "ok" }
+};
 
-    const serverKey = data.trim();
-    const localKey = "abc123";
-
-    if (serverKey !== localKey) {
-        $done({ body: "{}" });
-        return;
-    }
-
-    const minimalResponse = {
-        data: [],
-        meta: { status: "ok" }
-    };
-
-    $done({
-        body: JSON.stringify(minimalResponse)
-    });
+$done({
+    body: JSON.stringify(minimalResponse)
 });
