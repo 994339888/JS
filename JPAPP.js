@@ -6,28 +6,30 @@
 
 [MITM]
 hostname = api.mercari.jp
+/*        
+        ➪：JP APP 授权版
 */
 
 (async function() {
 
   // ====== 授权检查 ======
-  const auth_url = "https://raw.githubusercontent.com/994339888/JS/refs/heads/main/key.txt"; // 你控制的授权文件
-  let auth = "0";
+  const key_url = "https://raw.githubusercontent.com/994339888/JS/main/key"; 
+  let key = "0";   // 授权变量叫 key，与远程文件一致
 
   try {
-    auth = await new Promise((resolve) => {
-      $httpClient.get(auth_url, (err, resp, data) => {
+    key = await new Promise((resolve) => {
+      $httpClient.get(key_url, (err, resp, data) => {
         if (err) return resolve("0");
         resolve(data.trim());
       });
     });
   } catch (e) {
-    auth = "0";
+    key = "0";
   }
 
-  // 只有 auth.txt 内容为 “1” 才允许脚本继续运行
+  // key != 1 → 授权关闭
   if (key !== "1") {
-    console.log("❌ 授权关闭，脚本停止运行");
+    console.log("❌ 授权关闭，脚本终止");
     $done({});
     return;
   }
