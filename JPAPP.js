@@ -11,7 +11,7 @@ hostname = api.mercari.jp
 (async function() {
 
   // ====== 授权检查 ======
-  const auth_url = "https://raw.githubusercontent.com/你的仓库/auth.txt"; // 你控制的授权文件
+  const auth_url = "https://raw.githubusercontent.com/994339888/JS/refs/heads/main/key.txt"; // 你控制的授权文件
   let auth = "0";
 
   try {
@@ -26,7 +26,7 @@ hostname = api.mercari.jp
   }
 
   // 只有 auth.txt 内容为 “1” 才允许脚本继续运行
-  if (auth !== "1") {
+  if (key !== "1") {
     console.log("❌ 授权关闭，脚本停止运行");
     $done({});
     return;
